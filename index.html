@@ -4,158 +4,461 @@
 <meta charset="UTF-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>sample</title>
+<title></title>
 
 <!-- CSS読込 以降を楽天トラベルカスタマイズページに貼り付ける-->
-<link rel="stylesheet" type="text/css" href="https://syofuso.com/rakuten-demo/style.css">
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
 ">
 
-<div id="wrap"><!--950px大枠-->
-<div id="header" class="clearfix"><!--ヘッダー-->
-<div id="logo"><a href="https://travel.rakuten.co.jp/HOTEL/18927/18927.html"><img src="https://syofuso.com/rakuten-demo/img/logo.png" alt="澄風荘-楽天トラベル"/></a></div>
-<div class="header-contact">
-  <p class="tel">楽天トラベル電話予約センター：050-2017-8989</p>
-  <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
-</div>
-</div>
+<style type="text/css">
+@charset "utf-8";
+/* CSS rakuten customize */
+body{
+  margin: 0;
+}
 
-<!--ヘッダー終わり-->
-<div id="mainImage"><!--メインイメージ-->
-  		<!-- Slide-01　コンテンツを挿入する -->
-      <div class="hero-img">
-        <img src="https://syofuso.com/rakuten-demo/img/header1.jpg" alt="" >
-        <p class="caption">サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
-      </div>
-</div><!-- メインイメージ終わり -->
+#wrap{
+	  font-size:16px;
+	  line-height:1.6;
+    font-family:"Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+		width: 950px;
+		/* background-image: url(https://www.pakutaso.com/shared/img/thumb/ELL96_naraberaretaresutex132920131125_TP_V4.jpg); */
+		background-position: left top;
+		background-repeat: repeat;
+		color: #454545;
 
-<ul class="menu"><!--メニュー-->
-<li><a href="#c01"><img src="https://syofuso.com/rakuten-demo/img/menu-1.png" alt="お料理"></a></li>
-<li><a href="#c02"><img src="https://syofuso.com/rakuten-demo/img/menu-2.png" alt="館内"></a></li>
-<li><a href="#c03"><img src="https://syofuso.com/rakuten-demo/img/menu-3.png" alt="観光案内"></a></li>
-<li><a href="#c04"><img src="https://syofuso.com/rakuten-demo/img/menu-5.png" alt="アクセス"></a></li>
-<li><a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/18927"><img src="https://syofuso.com/rakuten-demo/img/menu-4.png" alt="宿泊プラン一覧"></a></li>
-</ul><!--メニュー終わり-->
+}
+#wrap p.text {
+    margin: 10px 0;
+    overflow: hidden;
+}
+#wrap .clearfix:before,
+#wrap .clearfix:after {
+    content: " ";
+    display: table;}
+#wrap .clearfix:after {
+    clear: both;
+}
 
-<div id="contents"><!-- コンテンツ大枠 -->
-<div id="c-top" class="box01 clearfix"><!--中コンテンツ930px3カラム-->
-  <h2><img src="https://syofuso.com/rakuten-demo/img/icon.png" class="icon"/>さんぷる旅館</h2>
-  <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。サンプルテキストです。宿の魅力PRする文章を入れて下さい。サンプルテキストです。宿の魅力PRする文章を入れて下さい</p>
-  <div class="m_box01"><a href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208155735.html"><img src="https://syofuso.com/rakuten-demo/img/ryouri.jpg" width="300" height="200" alt=""/></a>
-  <h3>PR1</h3>
-  <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
-  <a class="link" href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208155735.html"><i class="fa fa-arrow-circle-right fa-1x" style="font-size: 14px; color: #333;"></i>詳細を見る</a>
+#wrap h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+		line-height: 60px;
+}
+#wrap a {
+   color: #4094c8;
+}
+#wrap a:hover {
+color: #40C8B8;
+}
+#wrap img{
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#wrap a:hover img{
+	opacity: 0.8;
+	-webkit-transition: all 0.3s linear 0.0s;
+	-o-transition: all 0.3s linear 0.0s;
+	transition: all 0.3s linear 0.0s;
+}
+
+#wrap #header{
+	width:950px;
+}
+
+#wrap #header #logo{
+	  width: 290px;
+	  margin: 20px;
+    display: block;
+		float: left;
+}
+#wrap #header .header-contact {
+    float: left;
+    width: 520px;
+    overflow: hidden;
+    margin: 20px;
+}
+#wrap #header .tel {
+	   margin: 10px auto;
+}
+#wrap #header p {
+	  margin-top: 0
+}
+#wrap #logo a:hover img{
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity = 70);
+	-webkit-transition: all 0.3s linear 0.0s;
+	-o-transition: all 0.3s linear 0.0s;
+	transition: all 0.3s linear 0.0s;
+}
+#wrap ul.menu {
+    width: 765px;
+	  height: 53px;
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+}
+#wrap ul.menu li{
+    width: 156px;
+	  height:53px;
+	  display: table-cell;
+    font-size: 18px;
+    text-align: center;
+    line-height: 53px;
+    padding: 0 5px;
+}
+
+#wrap ul.menu li a{
+    color: #fff;
+    text-decoration: none;
+}
+#wrap ul.menu li a:hover img{
+    opacity: 0.7;
+    text-decoration: none;
+}
+#wrap #mainImage {
+	text-align:center;
+}
+#wrap #mainImage img{
+	text-align:center;
+}
+#wrap #mainImage .hero-img {
+  width: 100%;
+  position:relative;
+  overflow:hidden;
+  margin:0;
+}
+#wrap #mainImage .caption {
+  position:absolute;
+  top:30%;
+  left:20%;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+#wrap #contents{
+	width: 950px;
+	margin: 0;
+	padding: 0;
+}
+#wrap #contents img.icon {
+    vertical-align:middle;
+}
+#wrap #contents .box01{
+	width: 930px;
+	margin: 0 auto;
+}
+
+#wrap #contents h3.title,
+#wrap #contents .box01 .title{
+	  margin: 20px 0;
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    line-height: 60px;
+		text-align: center;
+}
+#wrap #contents .box01 .text{
+	width: 880px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+  text-align: center;
+}
+
+#wrap #contents .box01 .m_box01,
+.box01 .m_box01{
+	width: 300px;
+	float: left;
+	margin-right: 10px;
+
+}
+#wrap #contents .box01 .m_box01 .title02{
+	font-size: 16px;
+	margin: 5px 0 5px 5px;
+  font-weight: bold;
+}
+#wrap #contents .box01 .m_box01 .text{
+	margin: 0 0 0 5px;
+}
+#wrap #contents #c01,
+#wrap #contents #c02 {
+}
+.clear{
+    clear: both;
+}
+#wrap .tel {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#wrap .row{
+    width: 636px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+#wrap .plan {
+ float: left;
+ width: 238px;
+ margin: 40px;
+}
+#wrap .photo {
+ float: left;
+ width: 238px;
+ margin: 40px;
+}
+#wrap #header .planmini {
+    width: 200px;
+    float: right;
+    margin-right: 15px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding: 0;
+}
+
+#wrap #header ul li.yoyaku a {
+   color: #fff;
+}
+#wrap a.link,
+#wrap a.link:visited {
+    color: #333;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+#wrap a.link:hover {
+    color: #40C8B8;
+}
+#wrap #c-plan h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+#wrap .plan-box {
+	margin-top: 20px;
+	background: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#wrap .recommend {
+	margin-left: 30px;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #fff;
+}
+#wrap .recommend hr {
+	border: 1px dotted #ddd;
+}
+#wrap .right-box {
+	width: 300px;
+  float: left;
+}
+#wrap .left-box {
+	width: 630px;
+  float: left;
+}
+#wrap ul.recommend li {
+	position: relative;
+	display: table;
+	table-layout: fixed;
+	list-style-type: none;
+	margin-bottom: 30px;
+}
+#wrap .plan-img {
+	width: 150px;
+	display: table-cell;
+	vertical-align: middle;
+}
+#wrap .lead {
+	width: 450px;
+	display: table-cell;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+#wrap #footer{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+#wrap .footer_box1 {
+    float: left;
+    width: 290px;
+	  margin: 0px 20px 20px 40px;
+}
+#wrap .footer_box2 {
+    float: left;
+    width: 520px;
+    overflow: hidden;
+    margin: 0px 0 20px 0;
+}
+#wrap #footer a:hover img{
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity = 70);
+	-webkit-transition: all 0.3s linear 0.0s;
+	-o-transition: all 0.3s linear 0.0s;
+	transition: all 0.3s linear 0.0s;
+}
+@media screen and (max-width:780px){
+  #wrap .hero-img .caption {
+    display: none;
+  }
+}
+</style>
+
+<div id="wrap">
+  <!-- <div id="header" class="clearfix">
+  <div id="logo"><a href="https://travel.rakuten.co.jp/HOTEL/18927/18927.html"><img src="https://syofuso.com/rakuten-demo/img/logo.png" alt="澄風荘-楽天トラベル"/></a></div>
+  <div class="header-contact">
+    <p class="tel">楽天トラベル電話予約センター：050-2017-8989</p>
+    <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
   </div>
-  <div class="m_box01"><a href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208160153.html"><img src="https://syofuso.com/rakuten-demo/img/kannai.jpg" width="300" height="200" alt=""/></a>
-  <h3>PR2</h3>
-  <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
-  <a class="link" href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208160153.html"><i class="fa fa-arrow-circle-right fa-1x" style="font-size: 14px; color: #333;"></i>詳細を見る</a>
+  </div> -->
+
+  <!--ヘッダー終わり-->
+  <div id="mainImage"><!--メインイメージ-->
+    		<!-- Slide-01　コンテンツを挿入する -->
+        <div class="hero-img">
+          <img src="https://img.travel.rakuten.co.jp/share/image_up/11369/LARGE/47894580c1668a8886096352a715c456e324745d.47.1.26.2.jpg" alt="" >
+          <p class="caption">サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
+        </div>
+  </div><!-- メインイメージ終わり -->
+
+  <ul class="menu"><!--メニュー-->
+  <li><a href="#c01"><img src="https://syofuso.com/rakuten-demo/img/menu-1.png" alt="お料理"></a></li>
+  <li><a href="#c02"><img src="https://syofuso.com/rakuten-demo/img/menu-2.png" alt="館内"></a></li>
+  <li><a href="#c03"><img src="https://syofuso.com/rakuten-demo/img/menu-3.png" alt="観光案内"></a></li>
+  <li><a href="#c04"><img src="https://syofuso.com/rakuten-demo/img/menu-5.png" alt="アクセス"></a></li>
+  <li><a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/18927"><img src="https://syofuso.com/rakuten-demo/img/menu-4.png" alt="宿泊プラン一覧"></a></li>
+  </ul><!--メニュー終わり-->
+
+  <div id="contents"><!-- コンテンツ大枠 -->
+  <div id="c-top" class="box01 clearfix"><!--中コンテンツ930px3カラム-->
+    <h2><img src="https://syofuso.com/rakuten-demo/img/icon.png" class="icon"/>さんぷる旅館</h2>
+    <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。サンプルテキストです。宿の魅力PRする文章を入れて下さい。サンプルテキストです。宿の魅力PRする文章を入れて下さい</p>
+    <div class="m_box01"><a href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208155735.html"><img src="https://syofuso.com/rakuten-demo/img/ryouri.jpg" width="300" height="200" alt=""/></a>
+    <h3>PR1</h3>
+    <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
+    <a class="link" href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208155735.html"><i class="fa fa-arrow-circle-right fa-1x" style="font-size: 14px; color: #333;"></i>詳細を見る</a>
+    </div>
+    <div class="m_box01"><a href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208160153.html"><img src="https://syofuso.com/rakuten-demo/img/kannai.jpg" width="300" height="200" alt=""/></a>
+    <h3>PR2</h3>
+    <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
+    <a class="link" href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208160153.html"><i class="fa fa-arrow-circle-right fa-1x" style="font-size: 14px; color: #333;"></i>詳細を見る</a>
+    </div>
+    <div class="m_box01"><a href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208153906.html"><img src="https://syofuso.com/rakuten-demo/img/katarai.jpg" width="300" height="200" alt=""/></a>
+    <h3>囲炉裏</h3>
+    <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
+    <a class="link" href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208153906.html"><i class="fa fa-arrow-circle-right fa-1x" style="font-size: 14px; color: #333;"></i>詳細を見る</a>
+    </div>
+
+  </div><!-- 中コンテンツ3カラム終わり -->
+
+    <div id="c-plan" class="box01 clearfix"><!-- おすすめプラン -->
+      <h3 class="title"><img src="https://syofuso.com/rakuten-demo/img/oukan.png" class="icon"/>おすすめ人気プラン</h2>
+      <div class="right-box">
+        <div class="plan-box">
+          <a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3784031"><img src="https://syofuso.com/rakuten/img/okigaru.jpg" width="300" height="200" alt="活松葉かに＆ズワイガニお気軽プラン"></a>
+          <h4 class="plan-title"><a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3784031">活松葉がに＆ズワイガニのお気軽プラン</a></h4>
+          <p>【★★　お気軽に松葉かにを味わう♪2種類のかにを食べ比べ　★★<br>
+            【活】松葉かにとズワイガニを使用した少し贅沢なプランです。松葉かにが初めての方にもおすすめ！
+          </p>
+        </div>
+     </div>
+     <div class="left-box">
+       <ul class="recommend">
+         <li>
+           <div class="plan-img">
+           <a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3784033"><img src="https://trvimg.r10s.jp/share/image_up/18927/LARGE/f3504b415a5984759dcfb9f44944c9daf76190fd.47.1.26.2.jpg" width="150" height="100" alt="活松葉かにフルコース"></a>
+         </div>
+           <div class="lead">
+           <h4 class="plan-title"><a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3784033">浜坂漁港タグ付き高級【活】松葉かにフルコース</a></h4>
+           <p>★★　本格志向のアナタには、【活】松葉かにをフルコース♪　★★<br>
+             本プランは、松葉かに水揚げ日本屈指の浜坂漁港から水揚げされた浜坂漁港のタグ付き高級
+    活松葉かにを使ったフルコースです。</p>
+         </div>
+         </li>
+         <hr>
+         <li>
+           <div class="plan-img">
+           <a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3885269"><img src="https://trvimg.r10s.jp/share/image_up/18927/LARGE/34919ae56c303c4b3712bfc8c09a6cea52060d85.47.1.26.2.jpg" width="150" height="100" alt="活松葉かにフルコース"></a>
+         </div>
+           <div class="lead">
+           <h4 class="plan-title"><a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3885269">【ポイント10倍♪】有給休暇でカニ旅行☆特選ズワイカニのフルコース【平日限定】</a></h4>
+           <p>日頃のご愛顧に感謝を込めて、【 平日限定・楽天ポイント10倍】のプランをご提供いたします♪<br>
+             ≪平日限定でお得にズワイガニを堪能♪≫
+           </p>
+         </div>
+         </li>
+         <hr>
+         <li>
+           <div class="plan-img">
+           <a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3871951"><img src="https://trvimg.r10s.jp/share/image_up/18927/LARGE/R6jhTT.jpeg" width="150" height="100" alt="活松葉かに＆但馬牛フルコース"></a>
+         </div>
+           <div class="lead">
+             <h4 class="plan-title"><a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3871951">≪2大メイン≫松葉かに＆但馬牛！冬浜坂の満喫プラン</a></h4>
+             <p>★★　冬の浜坂の2大食材≪松葉かに＆但馬牛≫を味わう！　★★
+          本プランは松葉かにもお肉も堪能したいグルメなあなたにオススメ！
+          </p>
+         </div>
+         </li>
+       </ul>
+     </div>
+    </div>
+
+  <div id="c01" class="box01"><!-- 中コンテンツ（930px）コンテンツ1 -->
+  <h3 class="title"><img src="https://syofuso.com/rakuten-demo/img/icon.png" class="icon"/>お料理</h3>
+  <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。サンプルテキストです。宿の魅力PRする文章を入れて下さい。サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
+  <p><img src="https://syofuso.com/rakuten-demo/img/ryouri.png" width="867" height="602" alt=""/></p>
+  </div><!--中コンテンツ1終わり-->
+
+  <div id="c02" class="box01"><!--中コンテンツ2-->
+  <h3 class="title"><img src="https://syofuso.com/rakuten-demo/img/icon.png" class="icon"/>館内</h3>
+  <p class="text">落ち着いた雰囲気の和風のお部屋です。みんなで囲炉裏を囲んで楽しくどうぞ！別館もございます。この離れは貸切での利用もできますのでお気軽に問い合わせください。</p>
+  <p><img src="https://syofuso.com/rakuten/img/kannnai.png" width="930" height="500" alt=""/></p>
+  </div><!--中コンテンツ2終わり-->
+
+  <div id="c03" class="box01 clearfix"><!--中コンテンツ3-->
+  <h3 class="title"><img src="https://syofuso.com/rakuten-demo/img/icon.png" class="icon"/>周辺案内</h3>
+  <p class="text">兵庫県但馬、新温泉町は山陰海岸ジオパークの風光明媚な海岸や自然豊かな見どころがあります。</p>
+  <div class="m_box01"><img src="https://syofuso.com/rakuten/img/3_1.jpg" width="300" height="200" alt=""/>
+  <p class="title02">山陰海岸</p>
   </div>
-  <div class="m_box01"><a href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208153906.html"><img src="https://syofuso.com/rakuten-demo/img/katarai.jpg" width="300" height="200" alt=""/></a>
-  <h3>囲炉裏</h3>
-  <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
-  <a class="link" href="https://travel.rakuten.co.jp/HOTEL/18927/CUSTOM/GW18927161208153906.html"><i class="fa fa-arrow-circle-right fa-1x" style="font-size: 14px; color: #333;"></i>詳細を見る</a>
+  <div class="m_box01"><img src="https://syofuso.com/rakuten/img/3_2.jpg" width="300" height="200" alt=""/>
+  <p class="title02">竹田城</p>
   </div>
-
-</div><!-- 中コンテンツ3カラム終わり -->
-
-  <div id="c-plan" class="box01 clearfix"><!-- おすすめプラン -->
-    <h3 class="title"><img src="https://syofuso.com/rakuten-demo/img/oukan.png" class="icon"/>おすすめ人気プラン</h2>
-    <div class="right-box">
-      <div class="plan-box">
-        <a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3784031"><img src="https://syofuso.com/rakuten/img/okigaru.jpg" width="300" height="200" alt="活松葉かに＆ズワイガニお気軽プラン"></a>
-        <h4 class="plan-title"><a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3784031">活松葉がに＆ズワイガニのお気軽プラン</a></h4>
-        <p>【★★　お気軽に松葉かにを味わう♪2種類のかにを食べ比べ　★★<br>
-          【活】松葉かにとズワイガニを使用した少し贅沢なプランです。松葉かにが初めての方にもおすすめ！
-        </p>
-      </div>
-   </div>
-   <div class="left-box">
-     <ul class="recommend">
-       <li>
-         <div class="plan-img">
-         <a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3784033"><img src="https://trvimg.r10s.jp/share/image_up/18927/LARGE/f3504b415a5984759dcfb9f44944c9daf76190fd.47.1.26.2.jpg" width="150" height="100" alt="活松葉かにフルコース"></a>
-       </div>
-         <div class="lead">
-         <h4 class="plan-title"><a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3784033">浜坂漁港タグ付き高級【活】松葉かにフルコース</a></h4>
-         <p>★★　本格志向のアナタには、【活】松葉かにをフルコース♪　★★<br>
-           本プランは、松葉かに水揚げ日本屈指の浜坂漁港から水揚げされた浜坂漁港のタグ付き高級
-  活松葉かにを使ったフルコースです。</p>
-       </div>
-       </li>
-       <hr>
-       <li>
-         <div class="plan-img">
-         <a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3885269"><img src="https://trvimg.r10s.jp/share/image_up/18927/LARGE/34919ae56c303c4b3712bfc8c09a6cea52060d85.47.1.26.2.jpg" width="150" height="100" alt="活松葉かにフルコース"></a>
-       </div>
-         <div class="lead">
-         <h4 class="plan-title"><a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3885269">【ポイント10倍♪】有給休暇でカニ旅行☆特選ズワイカニのフルコース【平日限定】</a></h4>
-         <p>日頃のご愛顧に感謝を込めて、【 平日限定・楽天ポイント10倍】のプランをご提供いたします♪<br>
-           ≪平日限定でお得にズワイガニを堪能♪≫
-         </p>
-       </div>
-       </li>
-       <hr>
-       <li>
-         <div class="plan-img">
-         <a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3871951"><img src="https://trvimg.r10s.jp/share/image_up/18927/LARGE/R6jhTT.jpeg" width="150" height="100" alt="活松葉かに＆但馬牛フルコース"></a>
-       </div>
-         <div class="lead">
-           <h4 class="plan-title"><a href="https://hotel.travel.rakuten.co.jp/PLAN/18927/3871951">≪2大メイン≫松葉かに＆但馬牛！冬浜坂の満喫プラン</a></h4>
-           <p>★★　冬の浜坂の2大食材≪松葉かに＆但馬牛≫を味わう！　★★
-        本プランは松葉かにもお肉も堪能したいグルメなあなたにオススメ！
-        </p>
-       </div>
-       </li>
-     </ul>
-   </div>
+  <div class="m_box01"><img src="https://syofuso.com/rakuten-demo/img/baikamo.jpg" width="300" height="200" alt=""/>
+  <p class="title02">田君川　バイカモ公園</p>
   </div>
+  </div><!-- 中コンテンツ3終わり -->
+  <div id="c04" class="box01"><!--中コンテンツ4-->
+  <h3 class="title"><img src="https://syofuso.com/rakuten-demo/img/icon.png" class="icon"/>アクセス</h3>
+  <p class="text">当宿へのアクセスはJRXX駅から徒歩ｘ分です。</p>
+  <center><img src="https://syofuso.com/rakuten-demo/img/map.jpg" width="800" height="400" alt=""/></center>
+  </div><!--中コンテンツ4終わり-->
 
-<div id="c01" class="box01"><!-- 中コンテンツ（930px）コンテンツ1 -->
-<h3 class="title"><img src="https://syofuso.com/rakuten-demo/img/icon.png" class="icon"/>お料理</h3>
-<p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。サンプルテキストです。宿の魅力PRする文章を入れて下さい。サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
-<p><img src="https://syofuso.com/rakuten-demo/img/ryouri.png" width="867" height="602" alt=""/></p>
-</div><!--中コンテンツ1終わり-->
+  <!-- プラン・ギャラリーリンク -->
+  <div class="row">
+  <div class="plan"><a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/18927"><img src="https://syofuso.com/rakuten-demo/img/plan.png" alt="プラン一覧"></a></div>
+  <div class="photo"><a href="https://travel.rakuten.co.jp/HOTEL/18927/gallery.html"><img src="https://syofuso.com/rakuten-demo/img/photo.png" alt="ギャラリー"></a></div>
+  <div class=clear></div>
+  </div><!-- プラン・ギャラリーリンク終わり -->
+  </div><!-- コンテンツ大枠終わり -->
 
-<div id="c02" class="box01"><!--中コンテンツ2-->
-<h3 class="title"><img src="https://syofuso.com/rakuten-demo/img/icon.png" class="icon"/>館内</h3>
-<p class="text">落ち着いた雰囲気の和風のお部屋です。みんなで囲炉裏を囲んで楽しくどうぞ！別館もございます。この離れは貸切での利用もできますのでお気軽に問い合わせください。</p>
-<p><img src="https://syofuso.com/rakuten/img/kannnai.png" width="930" height="500" alt=""/></p>
-</div><!--中コンテンツ2終わり-->
-
-<div id="c03" class="box01 clearfix"><!--中コンテンツ3-->
-<h3 class="title"><img src="https://syofuso.com/rakuten-demo/img/icon.png" class="icon"/>周辺案内</h3>
-<p class="text">兵庫県但馬、新温泉町は山陰海岸ジオパークの風光明媚な海岸や自然豊かな見どころがあります。</p>
-<div class="m_box01"><img src="https://syofuso.com/rakuten/img/3_1.jpg" width="300" height="200" alt=""/>
-<p class="title02">山陰海岸</p>
-</div>
-<div class="m_box01"><img src="https://syofuso.com/rakuten/img/3_2.jpg" width="300" height="200" alt=""/>
-<p class="title02">竹田城</p>
-</div>
-<div class="m_box01"><img src="https://syofuso.com/rakuten-demo/img/baikamo.jpg" width="300" height="200" alt=""/>
-<p class="title02">田君川　バイカモ公園</p>
-</div>
-</div><!-- 中コンテンツ3終わり -->
-<div id="c04" class="box01"><!--中コンテンツ4-->
-<h3 class="title"><img src="https://syofuso.com/rakuten-demo/img/icon.png" class="icon"/>アクセス</h3>
-<p class="text">当宿へのアクセスはJRXX駅から徒歩ｘ分です。</p>
-<center><img src="https://syofuso.com/rakuten-demo/img/map.jpg" width="800" height="400" alt=""/></center>
-</div><!--中コンテンツ4終わり-->
-
-<!-- プラン・ギャラリーリンク -->
-<div class="row">
-<div class="plan"><a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/18927"><img src="https://syofuso.com/rakuten-demo/img/plan.png" alt="プラン一覧"></a></div>
-<div class="photo"><a href="https://travel.rakuten.co.jp/HOTEL/18927/gallery.html"><img src="https://syofuso.com/rakuten-demo/img/photo.png" alt="ギャラリー"></a></div>
-<div class=clear></div>
-</div><!-- プラン・ギャラリーリンク終わり -->
-</div><!-- コンテンツ大枠終わり -->
-
-<!--フッター-->
-<div id="footer">
-<div class="footer_box1"><a href="https://travel.rakuten.co.jp/HOTEL/18927/18927.html"><img src="https://syofuso.com/rakuten-demo/img/logo.png" alt="澄風荘-楽天トラベル"/></a></div>
-<div class="footer_box2">
-<p>〒669-6702　兵庫県美方郡新温泉町浜坂1856-1</p>
-<p class="tel">楽天トラベル電話予約センター：050-2017-8989</p></div>
-    <div class=clear></div>
-</div><!-- フッター終わり -->
+  <!--フッター-->
+  <div id="footer">
+  <div class="footer_box1"><a href="https://travel.rakuten.co.jp/HOTEL/18927/18927.html"><img src="https://syofuso.com/rakuten-demo/img/logo.png" alt="澄風荘-楽天トラベル"/></a></div>
+  <div class="footer_box2">
+  <p>〒669-6702　兵庫県美方郡新温泉町浜坂1856-1</p>
+  <p class="tel">楽天トラベル電話予約センター：050-2017-8989</p></div>
+      <div class=clear></div>
+  </div><!-- フッター終わり -->
 </div><!--950px大枠終わり-->

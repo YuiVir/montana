@@ -1,4 +1,301 @@
+@charset "utf-8";
+/* CSS rakuten customize */
 body{
-  max-width:950px;
+  margin: 0;
+}
 
+#wrap{
+	  font-size:16px;
+	  line-height:1.6;
+    font-family:"Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+		width: 950px;
+		background-image: url(https://www.pakutaso.com/shared/img/thumb/ELL96_naraberaretaresutex132920131125_TP_V4.jpg);
+		background-position: left top;
+		background-repeat: repeat;
+		color: #454545;
+
+}
+#wrap p.text {
+    margin: 10px 0;
+    overflow: hidden;
+}
+#wrap .clearfix:before,
+#wrap .clearfix:after {
+    content: " ";
+    display: table;}
+#wrap .clearfix:after {
+    clear: both;
+}
+
+#wrap h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+		line-height: 60px;
+}
+#wrap a {
+   color: #4094c8;
+}
+#wrap a:hover {
+color: #40C8B8;
+}
+#wrap img{
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#wrap a:hover img{
+	opacity: 0.8;
+	-webkit-transition: all 0.3s linear 0.0s;
+	-o-transition: all 0.3s linear 0.0s;
+	transition: all 0.3s linear 0.0s;
+}
+
+#wrap #header{
+	width:950px;
+}
+
+#wrap #header #logo{
+	  width: 290px;
+	  margin: 20px;
+    display: block;
+		float: left;
+}
+#wrap #header .header-contact {
+    float: left;
+    width: 520px;
+    overflow: hidden;
+    margin: 20px;
+}
+#wrap #header .tel {
+	   margin: 10px auto;
+}
+#wrap #header p {
+	  margin-top: 0
+}
+#wrap #logo a:hover img{
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity = 70);
+	-webkit-transition: all 0.3s linear 0.0s;
+	-o-transition: all 0.3s linear 0.0s;
+	transition: all 0.3s linear 0.0s;
+}
+#wrap ul.menu {
+    width: 765px;
+	  height: 53px;
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+}
+#wrap ul.menu li{
+    width: 156px;
+	  height:53px;
+	  display: table-cell;
+    font-size: 18px;
+    text-align: center;
+    line-height: 53px;
+    padding: 0 5px;
+}
+
+#wrap ul.menu li a{
+    color: #fff;
+    text-decoration: none;
+}
+#wrap ul.menu li a:hover img{
+    opacity: 0.7;
+    text-decoration: none;
+}
+#wrap #mainImage {
+	text-align:center;
+}
+#wrap #mainImage img{
+	text-align:center;
+}
+#wrap #mainImage .hero-img {
+  width: 100%;
+  position:relative;
+  overflow:hidden;
+  margin:0;
+}
+#wrap #mainImage .caption {
+  position:absolute;
+  top:30%;
+  left:20%;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+#wrap #contents{
+	width: 950px;
+	margin: 0;
+	padding: 0;
+}
+#wrap #contents img.icon {
+    vertical-align:middle;
+}
+#wrap #contents .box01{
+	width: 930px;
+	margin: 0 auto;
+}
+
+#wrap #contents h3.title,
+#wrap #contents .box01 .title{
+	  margin: 20px 0;
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    line-height: 60px;
+		text-align: center;
+}
+#wrap #contents .box01 .text{
+	width: 880px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+  text-align: center;
+}
+
+#wrap #contents .box01 .m_box01,
+.box01 .m_box01{
+	width: 300px;
+	float: left;
+	margin-right: 10px;
+
+}
+#wrap #contents .box01 .m_box01 .title02{
+	font-size: 16px;
+	margin: 5px 0 5px 5px;
+  font-weight: bold;
+}
+#wrap #contents .box01 .m_box01 .text{
+	margin: 0 0 0 5px;
+}
+#wrap #contents #c01,
+#wrap #contents #c02 {
+}
+.clear{
+    clear: both;
+}
+#wrap .tel {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#wrap .row{
+    width: 636px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+#wrap .plan {
+ float: left;
+ width: 238px;
+ margin: 40px;
+}
+#wrap .photo {
+ float: left;
+ width: 238px;
+ margin: 40px;
+}
+#wrap #header .planmini {
+    width: 200px;
+    float: right;
+    margin-right: 15px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding: 0;
+}
+
+#wrap #header ul li.yoyaku a {
+   color: #fff;
+}
+#wrap a.link,
+#wrap a.link:visited {
+    color: #333;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+#wrap a.link:hover {
+    color: #40C8B8;
+}
+#wrap #c-plan h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+#wrap .plan-box {
+	margin-top: 20px;
+	background: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+}
+#wrap .recommend {
+	margin-left: 30px;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #fff;
+}
+#wrap .recommend hr {
+	border: 1px dotted #ddd;
+}
+#wrap .right-box {
+	width: 300px;
+  float: left;
+}
+#wrap .left-box {
+	width: 630px;
+  float: left;
+}
+#wrap ul.recommend li {
+	position: relative;
+	display: table;
+	table-layout: fixed;
+	list-style-type: none;
+	margin-bottom: 30px;
+}
+#wrap .plan-img {
+	width: 150px;
+	display: table-cell;
+	vertical-align: middle;
+}
+#wrap .lead {
+	width: 450px;
+	display: table-cell;
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+#wrap #footer{
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+#wrap .footer_box1 {
+    float: left;
+    width: 290px;
+	  margin: 0px 20px 20px 40px;
+}
+#wrap .footer_box2 {
+    float: left;
+    width: 520px;
+    overflow: hidden;
+    margin: 0px 0 20px 0;
+}
+#wrap #footer a:hover img{
+	opacity: 0.7;
+	-moz-opacity: 0.7;
+	filter: alpha(opacity = 70);
+	-webkit-transition: all 0.3s linear 0.0s;
+	-o-transition: all 0.3s linear 0.0s;
+	transition: all 0.3s linear 0.0s;
+}
+@media screen and (max-width:780px){
+  #wrap .hero-img .caption {
+    display: none;
+  }
 }
