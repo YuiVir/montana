@@ -338,27 +338,28 @@ color: #40C8B8;
     width: 100%;
     top:0;
     left:100%;
-    -moz-animation: imgTrans 15s infinite;
-    -webkit-animation: imgTrans 15s infinite;
-    animation: imgTrans 15s infinite;
+
 }
 
 #rslider_photo1 img{
-  -moz-animation-delay: 0s;
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
+  -moz-animation: imgTrans 15s 0s infinite;
+  -webkit-animation: imgTrans 15s 0s infinite;
+  -o-animation: imgTrans 15s 0s infinite;
+  animation: imgTrans 15s 0s infinite;
 }
 
 #rslider_photo2 img{
-  -moz-animation-delay: 5s;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+  -moz-animation: imgTrans 15s 5s infinite;
+  -webkit-animation: imgTrans 15s 5s infinite;
+  -o-animation: imgTrans 15s 5s infinite;
+  animation: imgTrans 15s 5s infinite;
 }
 
 #rslider_photo3 img{
-  -moz-animation-delay: 10s;
-  -webkit-animation-delay: 10s;
-  animation-delay: 10s;
+  -moz-animation: imgTrans 15s 10s infinite;
+  -webkit-animation: imgTrans 15s 10s infinite;
+  -o-animation: imgTrans 15s 10s infinite;
+  animation: imgTrans 15s 10s infinite;
 }
 
 .rslider_adjust{
@@ -367,27 +368,30 @@ color: #40C8B8;
 
 @-webkit-keyframes imgTrans {
   0% { left:0%; opacity:0;}
-2% { left:0%;opacity:1; }
-18% { left:0%; opacity:1;}
-20% { left:0%;opacity:1; }
-50% { left:0%;opacity:1; }
-100% { left:100%;opacity:0; }
+  5% { left:0%;opacity:1; }
+  20% { left:0%; opacity:1;}
+  25% { left:0%;opacity:0; }
+  26% { opacity:0;left:100%; }
+  99.99% { opacity:0;left:100%; }
+  100% { opacity:0;left:0%; }
 }
 @-moz-keyframes imgTrans {q
   0% { left:0%; opacity:0;}
-2% { left:0%;opacity:1; }
-18% { left:0%; opacity:1;}
-20% { left:0%;opacity:1; }
-50% { left:0%;opacity:1; }
-100% { left:100%;opacity:0; }
+  5% { left:0%;opacity:1; }
+  20% { left:0%; opacity:1;}
+  25% { left:0%;opacity:0; }
+  26% { opacity:0;left:100%; }
+  99.99% { opacity:0;left:100%; }
+  100% { opacity:0;left:0%; }
 }
 @keyframes imgTrans {
   0% { left:0%; opacity:0;}
-2% { left:0%;opacity:1; }
-18% { left:0%; opacity:1;}
-20% { left:0%;opacity:1; }
-50% { left:0%;opacity:1; }
-100% { left:100%;opacity:0; }
+  5% { left:0%;opacity:1; }
+  20% { left:0%; opacity:1;}
+  25% { left:0%;opacity:0; }
+  26% { opacity:0;left:100%; }
+  99.99% { opacity:0;left:100%; }
+  100% { opacity:0;left:0%; }
 }
 
 
