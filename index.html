@@ -325,24 +325,90 @@ color: #40C8B8;
     display: none;
   }
 }
+
+#r_slider{
+  position: relative;
+  max-width: 950px;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+.rslider_pic img {
+    position:absolute;
+    width: 100%;
+    top:0;
+    left:100%;
+    -moz-animation: imgTrans 15s infinite;
+    -webkit-animation: imgTrans 15s infinite;
+    animation: imgTrans 15s infinite;
+}
+
+#rslider_photo1 img{
+  -moz-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+#rslider_photo2 img{
+  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  animation-delay: 5s;
+}
+
+#rslider_photo3 img{
+  -moz-animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+}
+
+.rslider_adjust{
+    padding:18%;
+}
+
+@-webkit-keyframes imgTrans {
+    0% { left:0%; opacity:0;}
+  5% { left:0%;opacity:1; }
+  20% { left:0%; opacity:1;}
+  25% { left:0%;opacity:0; }
+  26% { left:100%;opacity:0; }
+  100% { left:100%; opacity:0;}
+}
+@-moz-keyframes imgTrans {q
+    0% { left:0%; opacity:0;}
+  5% { left:0%;opacity:1; }
+  20% { left:0%; opacity:1;}
+  25% { left:0%;opacity:0; }
+  26% { left:100%;opacity:0; }
+  100% { left:100%; opacity:0;}
+}
+@keyframes imgTrans {
+    0% { left:0%; opacity:0;}
+  5% { left:0%;opacity:1; }
+  20% { left:0%; opacity:1;}
+  25% { left:0%;opacity:0; }
+  26% { left:100%;opacity:0; }
+}
+
+
 </style>
 
-<div id="wrap" class="cent">
-  <!-- <div id="header" class="clearfix">
-  <div id="logo"><a href="https://travel.rakuten.co.jp/HOTEL/18927/18927.html"><img src="https://syofuso.com/rakuten-demo/img/logo.png" alt="澄風荘-楽天トラベル"/></a></div>
-  <div class="header-contact">
-    <p class="tel">楽天トラベル電話予約センター：050-2017-8989</p>
-    <p>サンプルテキストです。宿の魅力PRする文章を入れて下さい。</p>
-  </div>
-  </div> -->
+<!--ヘッダー終わり-->
+<div id="mainImage"><!--メインイメージ-->
+      <!-- Slide-01　コンテンツを挿入する -->
+      <div class="hero-img">
+        <img src="https://kainumayui.me/images/topvar.png" alt="" >
+      </div>
+</div><!-- メインイメージ終わり -->
 
-  <!--ヘッダー終わり-->
-  <div id="mainImage"><!--メインイメージ-->
-    		<!-- Slide-01　コンテンツを挿入する -->
-        <div class="hero-img">
-          <img src="https://img.travel.rakuten.co.jp/share/image_up/11369/LARGE/47894580c1668a8886096352a715c456e324745d.47.1.26.2.jpg" alt="" >
-        </div>
-  </div><!-- メインイメージ終わり -->
+<div id="wrap" class="cent">
+<div id="r_slider">
+  <div id="rslider_photo1" class="rslider_pic"><a href="https://yahoo.co.jp"><img src="https://kainumayui.me/images/slide1.png"></a></div>
+  <div id="rslider_photo2" class="rslider_pic"><a href="https://google.com"><img src="https://kainumayui.me/images/slide2.png"></a></div>
+  <div id="rslider_photo3" class="rslider_pic"><a href="https://yahoo.co.jp"><img src="https://kainumayui.me/images/slide3.png"></a></div>
+  <div class="rslider_adjust"></div>
+</div><!-- r_slider -->
+
+
 
   <ul class="menu"><!--メニュー-->
   <li><a href="#c01"><img src="https://kainumayui.me/images/top.png" alt="お料理"></a></li>
@@ -374,6 +440,8 @@ color: #40C8B8;
 周辺には四季ごとの絶景を堪能できるスポットが満載！</p>
   <p><img src="https://kainumayui.me/images/cola.png" width="800" height="500" text=center; alt=""/></p>
   </div><!--中コンテンツ2終わり-->
+
+
 
   <div id="footer">
   <div class="footer_box1"><a href="https://travel.rakuten.co.jp/HOTEL/18927/18927.html"><img src="https://kainumayui.me/images/logo.png" alt="澄風荘-楽天トラベル"/></a></div>
