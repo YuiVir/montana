@@ -449,18 +449,25 @@ top:-200px;
 list-style:none;
 }
 .cp_cssslider li:nth-child(1){
--webkit-animation:cycle1 15s linear infinite;
-animation:cycle1 15s linear infinite;
+-webkit-animation:cycle1 25s linear infinite;
+animation:cycle1 25s linear infinite;
 }
 .cp_cssslider li:nth-child(2){
--webkit-animation:cycle2 15s linear infinite;
-animation:cycle2 15s linear infinite;
+-webkit-animation:cycle2 25s linear infinite;
+animation:cycle2 25s linear infinite;
 }
 .cp_cssslider li:nth-child(3){
--webkit-animation:cycle3 15s linear infinite;
-animation:cycle3 15s linear infinite;
+-webkit-animation:cycle3 25s linear infinite;
+animation:cycle3 25s linear infinite;
 }
-
+.cp_cssslider li:nth-child(4){
+-webkit-animation:cycle4 25s linear infinite;
+animation:cycle4 25s linear infinite;
+}
+.cp_cssslider li:nth-child(5){
+-webkit-animation:cycle5 25s linear infinite;
+animation:cycle5 25s linear infinite;
+}
 @keyframes cycle1 {
 0%  { top:0px; }
 4%  { top:0px; }
@@ -492,7 +499,24 @@ animation:cycle3 15s linear infinite;
 61% { top:-200px; opacity:0; z-index:-1; }
 100%{ top:-200px; opacity:0; z-index:-1; }
 }
-
+@keyframes cycle4 {
+0%  { top:-200px; opacity:0; }
+56% { top:-200px; opacity:0; }
+60% { top:0px; opacity:1; }
+64% { top:0px; opacity:1; }
+76% { top:0px; opacity:1; z-index:0; }
+80% { top:200px; opacity:0; z-index:0; }
+81% { top:-200px; opacity:0; z-index:-1; }
+100%{ top:-200px; opacity:0; z-index:-1; }
+}
+@keyframes cycle5 {
+0%  { top:-200px; opacity:0; }
+76% { top:-200px; opacity:0; }
+80% { top:0px; opacity:1; }
+84% { top:0px; opacity:1; }
+96% { top:0px; opacity:1; z-index:0; }
+100%{ top:200px; opacity:0; z-index:0; }
+}
 /* progressbar */
 .cp_progressbar {
 position:relative;
@@ -500,8 +524,8 @@ top:-5px;
 width:680px;
 height:5px;
 background:#000000;
--webkit-animation:progressbar 15s ease-out infinite;
-animation:progressbar 15s ease-out infinite;
+-webkit-animation:progressbar 25s ease-out infinite;
+animation:progressbar 25s ease-out infinite;
 }
 /* animation */
 @keyframes progressbar {
@@ -523,6 +547,7 @@ animation:progressbar 15s ease-out infinite;
         <img src="https://kainumayui.me/images/topvar.png" alt="" >
       </div>
 </div><!-- メインイメージ終わり -->
+
 <div class="cp_cssslider">
 	<div class="mask">
 	<ul>
@@ -534,6 +559,12 @@ animation:progressbar 15s ease-out infinite;
 
 	<li><a href="#"><img src="https://kainumayui.me/images/slide3.png" /></a>
 	<div class="tooltip"><h1>sample3</h1></div></li>
+
+  <li><a href="#"><img src="https://kainumayui.me/images/slide4.png" /></a>
+  <div class="tooltip"><h1>sample4</h1></div></li>
+
+  <li><a href="#"><img src="https://kainumayui.me/images/slide5.png" /></a>
+  <div class="tooltip"><h1>sample5</h1></div></li>
 	</ul>
 	</div>
 	<div class="cp_progressbar"></div>
@@ -544,11 +575,11 @@ animation:progressbar 15s ease-out infinite;
 
 
   <ul class="menu"><!--メニュー-->
-  <li><a href="#c01"><img src="https://kainumayui.me/images/top.png" alt="お料理"></a></li>
-  <li><a href="#c02"><img src="https://kainumayui.me/images/plan.png" alt="館内"></a></li>
-  <li><a href="#c03"><img src="https://kainumayui.me/images/photo.png" alt="観光案内"></a></li>
-  <li><a href="#c04"><img src="https://kainumayui.me/images/review.png" alt="アクセス"></a></li>
-  <li><a href="https://kainumayui.me/images/.png"><img src="https://kainumayui.me/images/access.png" text-arign:center; alt="宿泊プラン一覧"></a></li>
+  <li><a href="#c01"><img src="https://kainumayui.me/images/botan_top.png" alt="お料理"></a></li>
+  <li><a href="#c02"><img src="https://kainumayui.me/images/botan_plan.png" alt="館内"></a></li>
+  <li><a href="#c03"><img src="https://kainumayui.me/images/botan_photo.png" alt="観光案内"></a></li>
+  <li><a href="#c04"><img src="https://kainumayui.me/images/botan_review.png" alt="アクセス"></a></li>
+  <li><a href="https://kainumayui.me/images/.png"><img src="https://kainumayui.me/images/botan_access.png" text-arign:center; alt="宿泊プラン一覧"></a></li>
   </ul><!--メニュー終わり-->
 
   <div id="contents"><!-- コンテンツ大枠 -->
