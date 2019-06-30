@@ -352,29 +352,7 @@ margin:0;
 padding:0;
 position:relative;
 }
-/* tooltip */
-.cp_cssslider .tooltip {
-background:rgba(0,0,0,0.7);
-width:0px;
-height:auto;
-position:relative;
-bottom:95px;
-left:-300px;
--webkit-transition:all 0.3s ease-in-out;
-transition:all 0.3s ease-in-out;
-}
-.cp_cssslider .tooltip h1 {
-color:#fff;
-padding:0 0 0 20px;
-}
-.cp_cssslider li:hover .tooltip{
-left:0px;
-}
-.cp_cssslider:hover li,
-.cp_cssslider:hover .cp_progressbar {
--webkit-animation-play-state:paused;
-animation-play-state:paused;
-}
+
 .cp_cssslider li {
 width:950px;
 height:350px;
@@ -469,19 +447,19 @@ animation:cycle5 25s linear infinite;
 	<div class="mask">
 	<ul>
 	<li><a href="#"><img src="https://kainumayui.me/images/slide1.png" /></a>
-	<div class="tooltip"><h1>sample1</h1></div></li>
+	<div class="tooltip"></div></li>
 
 	<li><a href="#"><img src="https://kainumayui.me/images/slide2.png" /></a>
-	<div class="tooltip"><h1>sample2</h1></div></li>
+	<div class="tooltip"></div></li>
 
 	<li><a href="#"><img src="https://kainumayui.me/images/slide3.png" /></a>
-	<div class="tooltip"><h1>sample3</h1></div></li>
+	<div class="tooltip"></div></li>
 
   <li><a href="#"><img src="https://kainumayui.me/images/slide4.png" /></a>
-  <div class="tooltip"><h1>sample4</h1></div></li>
+  <div class="tooltip"></div></li>
 
   <li><a href="#"><img src="https://kainumayui.me/images/slide5.png" /></a>
-  <div class="tooltip"><h1>sample5</h1></div></li>
+  <div class="tooltip"></div></li>
 	</ul>
 	</div>
 	<div class="cp_progressbar"></div>
@@ -489,18 +467,19 @@ animation:cycle5 25s linear infinite;
 
 
 
+
   <ul class="menu"><!--メニュー-->
-  <li><a href="#c01"><img src="https://kainumayui.me/images/botan_top.png" alt="お料理"></a></li>
-  <li><a href="#c02"><img src="https://kainumayui.me/images/botan_plan.png" alt="館内"></a></li>
-  <li><a href="#c03"><img src="https://kainumayui.me/images/botan_photo.png" alt="観光案内"></a></li>
-  <li><a href="#c04"><img src="https://kainumayui.me/images/botan_review.png" alt="アクセス"></a></li>
-  <li><a href="https://kainumayui.me/images/.png"><img src="https://kainumayui.me/images/botan_access.png" text-arign:center; alt="宿泊プラン一覧"></a></li>
+  <li><a href="https://travel.rakuten.co.jp/HOTEL/11369/11369.html"><img src="https://kainumayui.me/images/botan_top.png"></a></li>
+  <li><a href="https://hotel.travel.rakuten.co.jp/hotelinfo/plan/11369?f_teikei=&f_heya_su=1&f_otona_su=1&f_s1=0&f_s2=0&f_y1=0&f_y2=0&f_y3=0&f_y4=0&f_kin=&f_kin2=&f_squeezes=&f_tscm_flg=&f_tel=&f_static=1"><img src="https://kainumayui.me/images/botan_plan.png"></a></li>
+  <li><a href="https://travel.rakuten.co.jp/HOTEL/11369/gallery.html"><img src="https://kainumayui.me/images/botan_photo.png"></a></li>
+  <li><a href="https://travel.rakuten.co.jp/HOTEL/11369/review.html"><img src="https://kainumayui.me/images/botan_review.png"></a></li>
+  <li><a href=""><img src="https://travel.rakuten.co.jp/HOTEL/11369/rtmap.html" text-arign:center;></a></li>
   </ul><!--メニュー終わり-->
 
   <div id="contents"><!-- コンテンツ大枠 -->
   <div id="c-top" class="box01 clearfix"><!--中コンテンツ930px3カラム-->
 
-    <p><img src="https://kainumayui.me/images/maintop.png"  text=center; alt=""/></p>
+    <p><img src="https://kainumayui.me/images/midokoro.png"  text=center; alt=""/></p>
   </div><!-- 中コンテンツ3カラム終わり -->
 
 
@@ -518,6 +497,13 @@ animation:cycle5 25s linear infinite;
   <p class="text">お洒落な雰囲気の館内、オーナーこだわりのレトロな家具や雑貨が可愛らしいです。</p>
   <p><img src="https://kainumayui.me/images/cola.png" width="800" height="500" text=center; alt=""/></p>
   </div><!--中コンテンツ2終わり-->
+
+  <!-- プラン・ギャラリーリンク -->
+  <div class="row">
+  <div class="plan"><a href="https://www.facebook.com/GasutohofuMontanyaMontana/?epa=SEARCH_BOX"><img src="https://kainumayui.me/images/facebook.png" alt="プラン一覧"></a></div>
+  <div class="photo"><a href="http://aizu-montana.com/"><img src="https://kainumayui.me/images/HP.png" alt="ギャラリー"></a></div>
+  <div class=clear></div>
+  </div><!-- プラン・ギャラリーリンク終わり -->
 
   <div id="contents"><!-- コンテンツ大枠 -->
   <div id="c-top" class="box01 clearfix" ><!--中コンテンツ930px3カラム-->
