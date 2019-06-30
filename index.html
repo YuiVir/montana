@@ -133,10 +133,12 @@ color: #40C8B8;
 }
 #wrap #mainImage {
 	text-align:center;
+    margin:0;
 }
 #wrap #mainImage img{
 	text-align:center;
   background-size: cover;
+  margin:0;
 }
 #wrap #mainImage .hero-img img{
   width: 100%;
@@ -298,7 +300,6 @@ color: #40C8B8;
 
 #wrap #footer{
 	text-align: center;
-	margin-bottom: 30px;
 	margin-top: 30px;
 }
 #wrap .footer_box1 {
@@ -326,73 +327,6 @@ color: #40C8B8;
   }
 }
 
-/* #r_slider{
-  position: relative;
-  max-width: 950px;
-  margin:0 auto;
-  overflow: hidden;
-}
-
-.rslider_pic img {
-    position:absolute;
-    width: 100%;
-    top:0;
-    left:100%;
-
-}
-
-#rslider_photo1 img{
-  -moz-animation: imgTrans 15s 0s infinite;
-  -webkit-animation: imgTrans 15s 0s infinite;
-  -o-animation: imgTrans 15s 0s infinite;
-  animation: imgTrans 15s 0s infinite;
-}
-
-#rslider_photo2 img{
-  -moz-animation: imgTrans 15s 5s infinite;
-  -webkit-animation: imgTrans 15s 5s infinite;
-  -o-animation: imgTrans 15s 5s infinite;
-  animation: imgTrans 15s 5s infinite;
-}
-
-#rslider_photo3 img{
-  -moz-animation: imgTrans 15s 10s infinite;
-  -webkit-animation: imgTrans 15s 10s infinite;
-  -o-animation: imgTrans 15s 10s infinite;
-  animation: imgTrans 15s 10s infinite;
-}
-
-.rslider_adjust{
-    padding:18%;
-} */
-
-/* @-webkit-keyframes imgTrans {
-  0% { left:0%; opacity:0;}
-  5% { left:0%;opacity:1; }
-  20% { left:0%; opacity:1;}
-  25% { left:0%;opacity:0; }
-  26% { opacity:0;left:100%; }
-  99.99% { opacity:0;left:100%; }
-  100% { opacity:0;left:0%; }
-}
-@-moz-keyframes imgTrans {q
-  0% { left:0%; opacity:0;}
-  5% { left:0%;opacity:1; }
-  20% { left:0%; opacity:1;}
-  25% { left:0%;opacity:0; }
-  26% { opacity:0;left:100%; }
-  99.99% { opacity:0;left:100%; }
-  100% { opacity:0;left:0%; }
-}
-@keyframes imgTrans {
-  0% { left:0%; opacity:0;}
-  5% { left:0%;opacity:1; }
-  20% { left:0%; opacity:1;}
-  25% { left:0%;opacity:0; }
-  26% { opacity:0;left:100%; }
-  99.99% { opacity:0;left:100%; }
-  100% { opacity:0;left:0%; }
-} */
 
 *, *:before, *:after {
 -webkit-box-sizing: border-box;
@@ -517,23 +451,6 @@ animation:cycle5 25s linear infinite;
 96% { top:0px; opacity:1; z-index:0; }
 100%{ top:200px; opacity:0; z-index:0; }
 }
-/* progressbar */
-.cp_progressbar {
-position:relative;
-top:-5px;
-width:680px;
-height:5px;
-background:#000000;
--webkit-animation:progressbar 25s ease-out infinite;
-animation:progressbar 25s ease-out infinite;
-}
-/* animation */
-@keyframes progressbar {
-0%, 20%, 40%, 60%, 80%, 100% { width:0%; opacity:0; }
-4%, 24%, 44%, 64%, 84% { width:0%; opacity:0.3; }
-16%, 36%, 56%, 76%, 96% { width:100%; opacity:0.3; }
-18%, 38%, 58%, 78%, 98% { width:100%; opacity:0; }
-}
 
 </style>
 
@@ -572,8 +489,6 @@ animation:progressbar 25s ease-out infinite;
 
 
 
-
-
   <ul class="menu"><!--メニュー-->
   <li><a href="#c01"><img src="https://kainumayui.me/images/botan_top.png" alt="お料理"></a></li>
   <li><a href="#c02"><img src="https://kainumayui.me/images/botan_plan.png" alt="館内"></a></li>
@@ -599,19 +514,14 @@ animation:progressbar 25s ease-out infinite;
   </div><!--中コンテンツ1終わり-->
 
   <div id="c02" class="box01"><!--中コンテンツ2-->
-  <h3 class="title"><img src="https://kainumayui.me/images/icon_l.png" class="icon"/>ギャラリー<img src="https://kainumayui.me/images/icon_r.png" class="icon"/></h3>
-  <p class="text">お洒落な館内、庭や星空を見渡す貸切露天風呂も人気。
-周辺には四季ごとの絶景を堪能できるスポットが満載！</p>
+  <h3 class="title"><img src="https://kainumayui.me/images/icon_l.png" class="icon"/>館内の様子<img src="https://kainumayui.me/images/icon_r.png" class="icon"/></h3>
+  <p class="text">お洒落な雰囲気の館内、オーナーこだわりのレトロな家具や雑貨が可愛らしいです。</p>
   <p><img src="https://kainumayui.me/images/cola.png" width="800" height="500" text=center; alt=""/></p>
   </div><!--中コンテンツ2終わり-->
 
+  <div id="contents"><!-- コンテンツ大枠 -->
+  <div id="c-top" class="box01 clearfix" ><!--中コンテンツ930px3カラム-->
 
-
-  <div id="footer">
-  <div class="footer_box1"><a href="https://travel.rakuten.co.jp/HOTEL/18927/18927.html"><img src="https://kainumayui.me/images/logo.png" alt="澄風荘-楽天トラベル"/></a></div>
-  <div class="footer_box2">
-  <p>〒９６９-３３０１　福島県耶麻郡磐梯町磐梯字七ツ森７３５１－２</p>
-  <p class="tel">TEL：０２４２-７３-３７３３　FAX：０２４２-７３-３７３５</p></div>
-      <div class=clear></div>
-  </div>
+  <p><img src="https://kainumayui.me/images/footer.png"  text=center; alt=""/></p>
+  </div><!-- 中コンテンツ3カラム終わり -->
 </div>
